@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page with Navigation</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="view.html">View</a></li>
+            <li><a href="saved.html">Saved</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    <div class="clear"></div> 
+    <!-- Main Page Content -->
+    <div class="content">
+        <h1>Weather App</h1>
+    </div>
+    <div class="form-container">
+        <h2>Login</h2>
+        <!-- The name attribute on the form helps identify it in scripts -->
+        <form name="nameSubmissionForm" action="/submit-path" method="POST">
+            
+            <!-- First Name Input Field -->
+            <div class="form-group">
+                <label for="firstName">Username:</label>
+                <input type="text" id="firstName" name="fname" placeholder="" required>
+            </div>
+
+            <!-- Last Name Input Field -->
+            <div class="form-group">
+                <label for="lastName">Password:</label>
+                <input type="text" id="lastName" name="lname" placeholder="" required>
+            </div>
+            <p class="thick">Create new account</p>
+            <p class="thick">Forgot password</p>
+            <!-- Submit Button -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="tests">
+        <p>This Weather App can provides the user to search for weather location by inputing city, state, and country, or zipcodes. And the user can saved, view, and delete weather location.</p>
+    </div>
+
+   
+</body>
+</html>
